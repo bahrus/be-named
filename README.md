@@ -1,6 +1,6 @@
 # be-named [TODO]
 
-be-named allows for a dynamic tag name.  This is useful for allowing multiple versions of a custom element to be used in parallel (assuming they register with different names dynamically or via some other mechanism).
+be-named is a template element decorator that allows for a dynamic tag name.  This is useful for allowing multiple versions of a custom element to be used in parallel (assuming they register with different names dynamically or via some other mechanism).
 
 It is also useful for lists of tags where the tag name is not known until runtime.
 
@@ -33,3 +33,6 @@ function render(){
     `;
 }
 ```
+
+be-named provides a [DTR plugin](https://github.com/bahrus/trans-render#declarative-trans-render-syntax-via-plugins) as well.
+
