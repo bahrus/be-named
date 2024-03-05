@@ -4,8 +4,6 @@ be-named is a template element decorator that allows for a dynamic tag name.  Th
 
 It is also useful for lists of tags where the tag name is not known until runtime.
 
-https://chromestatus.com/feature/5199783177748480
-
 ## Syntax
 
 ```html
