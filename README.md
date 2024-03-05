@@ -10,6 +10,7 @@ It is also useful for lists of tags where the tag name is not known until runtim
 <template be-named=t-b-d be-named-idrefs="light-child-1 light-child-2"></template>
 <input be-named-slot=slot1 id=light-child-1>
 <details be-named-slot=slot2 id=light-child-2>
+    ...
 </details>
 ```
 
@@ -19,6 +20,8 @@ generates
 <t-b-d>
     <input slot=slot1 id=light-child-1>
     <details slot=slot2 id=light-child-2>
+        ...
+    </details>
 </t-b-d>
 ```
 
