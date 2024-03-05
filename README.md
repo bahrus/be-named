@@ -4,12 +4,15 @@ be-named is a template element decorator that allows for a dynamic tag name.  Th
 
 It is also useful for lists of tags where the tag name is not known until runtime.
 
+https://chromestatus.com/feature/5199783177748480
+
 ## Syntax
 
 ```html
-<template be-named=t-b-d>
-    <light-children></light-children>
-</template>
+<template be-named=t-b-d be-named-idrefs="light-child-1 light-child-2"></template>
+<input id=light-child-1>
+<details id=light-child-2>
+</details>
 ```
 
 generates
@@ -20,19 +23,6 @@ generates
 </t-b-d>
 ```
 
-This may work most effectively where the markup is not static, but is generated in a JS setting.
+This may work most effectively where the [markup is not static](https://caniuse.com/mdn-api_customelementregistry_getname), but is generated in a JS setting.
 
-```JavaScript
-import { myCustomElement } from './my-custom-element.js';
-
-function render(){
-    return html`
-        <template be-named=${myCustomElement.isReally}>
-            <light-children></light-children>
-        </templated>
-    `;
-}
-```
-
-be-named provides a [DTR plugin](https://github.com/bahrus/trans-render#declarative-trans-render-syntax-via-plugins) as well.
 
