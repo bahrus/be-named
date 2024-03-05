@@ -17,7 +17,8 @@ generates
 
 ```html
 <t-b-d>
-    <light-children></light-children>
+    <input slot=slot1 id=light-child-1>
+    <details slot=slot2 id=light-child-2>
 </t-b-d>
 ```
 
